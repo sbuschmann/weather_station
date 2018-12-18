@@ -1,10 +1,12 @@
-import matplotlib
-matplotlib.use('Agg')
+import os
+import matplotlib as mpl
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using non-interactive Agg backend')
+    mpl.use('Agg')
+import matplotlib.pyplot as plt
 
 import glob
-import os
 import pandas as pd
-import matplotlib
 import numpy as np
 import datetime as dt
 import time
@@ -47,6 +49,8 @@ def load_data(path = r"/Volumes/pi/prog/weather_station"):
     df = data.copy(deep = True)
 
     df["time"] = pd.to_datetime(df["time"])
+    f = df["time"].isnull()
+    df = df[~f]
     df = df.set_index("time")
     df = df.sort_index()
     #df = df.loc[df.index.notnull()]
