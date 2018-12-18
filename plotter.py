@@ -46,7 +46,8 @@ def load_data(path = r"/Volumes/pi/prog/weather_station"):
     df["time"] = pd.to_datetime(df["time"])
     df = df.set_index("time")
     df = df.sort_index()
-    df = df.loc[df.index.notnull()]
+    #df = df.loc[df.index.notnull()]
+    
     return df
 
 def plot_weather_data():
