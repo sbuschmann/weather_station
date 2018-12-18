@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 plt.style.use('default')
-%matplotlib inline  
 
 #from IPython.core.interactiveshell import InteractiveShell
 #InteractiveShell.ast_node_interactivity = "all"
