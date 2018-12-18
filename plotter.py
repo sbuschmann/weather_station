@@ -143,5 +143,7 @@ def plot_weather_data():
 path = r"/Volumes/pi/prog/weather_station"
 path = r"."
 
-df = load_data(path)
-plot_weather_data()
+while True:
+    df = load_data(path)
+    plot_weather_data()
+    time.sleep(60)
