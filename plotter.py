@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use('Agg')
+
 import glob
 import os
 import pandas as pd
@@ -47,7 +50,7 @@ def load_data(path = r"/Volumes/pi/prog/weather_station"):
     df = df.set_index("time")
     df = df.sort_index()
     #df = df.loc[df.index.notnull()]
-    
+
     return df
 
 def plot_weather_data():
