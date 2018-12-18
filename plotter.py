@@ -138,7 +138,7 @@ def plot_weather_data():
                   loc = "upper center", bbox_to_anchor=(1.17, 1))
 
     fig.autofmt_xdate()
-    fig.savefig(os.path.join(path, "fig.png"), bbox_extra_artists = (lgd1,lgd2), dpi=200, bbox_inches='tight')
+    fig.savefig(os.path.join(path, "weather_info.png"), bbox_extra_artists = (lgd1,lgd2), dpi=200, bbox_inches='tight')
 
 path = r"/Volumes/pi/prog/weather_station"
 path = r"."
