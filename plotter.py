@@ -104,7 +104,7 @@ def plot_weather_data():
     axs[n].plot(tmp.index, tmp[what_to_plot], "-", lw=lineWidth)
 
     axs[n].grid(True)
-    axs[n].set_ylabel("Temperature [°C]")
+    axs[n].set_ylabel("Temperature")
     axs[n].get_xaxis().set_ticklabels([])
     axs[n].set_ylim(-5,25)
     #axs[n].text(last_time, 10, "huhu")
