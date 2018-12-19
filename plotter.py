@@ -89,12 +89,6 @@ def plot_weather_data():
 
     now = dt.datetime.now()
     annotation = ""
-    #axs[0].annotate("%s %.2f° %.2f%%" %(dt.datetime.now().strftime("%d.%m.%Y %H:%M:%S"), temp_last_val, hum_last_val)
-    #                , xy = (0.25, 1.1)
-    #                , xycoords = "axes fraction"
-    #                , style="normal"
-    #                #, bbox=dict(boxstyle="square", fc="w", ec="k")
-    #               )
 
     what_to_plot = "temp"
     f = df["sensor"]==sensor_in
