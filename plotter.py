@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: latin1 -*- 
 
 import os
 import matplotlib as mpl
