@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import os
 import matplotlib as mpl
 if os.environ.get('DISPLAY','') == '':
