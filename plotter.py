@@ -42,6 +42,7 @@ def remove_outliers(df, overwrite = False, q_upper = 0.99, q_lower = 0.01):
 def load_data(path = r"/Volumes/pi/prog/weather_station"):
     frames = []
     files = glob.glob(os.path.join(path, "data", "weather_data_*.csv"))
+    print("Loading files... in total %s files available" %len(files))
     for file in files[:]:
         print(file)
         frames.append(pd.read_csv(file))
